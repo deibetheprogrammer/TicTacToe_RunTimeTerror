@@ -3,7 +3,7 @@
 Jugador::Jugador(){
 	nombre="";
 	puntos=0;
-	marcha=' ';
+	marca=' ';
 }
 
 string Jugador::getNombre(){
@@ -15,7 +15,7 @@ void Jugador::setNombre(string pnombre){
 }
 
 int Jugador::getPuntos(){
-	return nombre;	
+	return puntos;	
 }
 
 void Jugador::setPuntos(int ppuntos){
