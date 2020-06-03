@@ -4,6 +4,14 @@ Jugador::Jugador(){
 	nombre="";
 	puntos=0;
 	marca=' ';
+	corx=0;
+	cory=0;
+}
+
+Jugador::Jugador(string pnombre, int ppuntos, char pmarca){
+	nombre=pnombre;
+	puntos=ppuntos;
+	marca=pmarca;
 }
 
 string Jugador::getNombre(){
@@ -30,8 +38,9 @@ void Jugador::setMarca(char pmarca){
 	marca=pmarca;
 }
 
-void Jugador::elegirCasilla(){
-
+void Jugador::elegirCasilla(int x, int y){
+	corx=x;
+	cory=y;
 } //Método Virtual Puro
 
 void Jugador::RealizarJugada(){
