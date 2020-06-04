@@ -28,8 +28,13 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
+<<<<<<< HEAD
 CompilerSettings=0000000000000000001000000
 UnitCount=14
+=======
+CompilerSettings=0000000000000000000000000
+UnitCount=13
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 
 [VersionInfo]
 Major=1
@@ -121,7 +126,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
+<<<<<<< HEAD
 FileName=Juego.cpp
+=======
+FileName=JugadoHumano.cpp
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
 Compile=1
@@ -131,7 +140,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
+<<<<<<< HEAD
 FileName=Juego.h
+=======
+FileName=Juego.cpp
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
 Compile=1
@@ -141,7 +154,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
+<<<<<<< HEAD
 FileName=JugadoHumano.cpp
+=======
+FileName=Juego.h
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
 Compile=1
@@ -161,6 +178,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
+<<<<<<< HEAD
 FileName=JugadoHumano.h.gch
 Folder=
 Compile=0
@@ -170,6 +188,8 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit13]
+=======
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 FileName=Jugador.cpp
 CompileCpp=1
 Folder=
@@ -179,7 +199,11 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
+<<<<<<< HEAD
 [Unit14]
+=======
+[Unit13]
+>>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 FileName=Jugador.h
 CompileCpp=1
 Folder=
