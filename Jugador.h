@@ -1,5 +1,6 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
+#include "Tablero.h"
 #include <iostream>
 #include <string>
 
@@ -10,7 +11,7 @@ class Jugador{
 	public:
 		
 		Jugador();
-		Jugador(string,int,char);
+		Jugador(string, int, char);
 		string getNombre();
 		void setNombre(string);
 
@@ -19,8 +20,8 @@ class Jugador{
 		
 		char getMarca();
 		void setMarca(char);
-		virtual void elegirCasilla(int ,int ) =0 ; //Método Virtual Puro
-		void RealizarJugada();
+		virtual bool elegirCasilla(int ,int)=0; //Método Virtual Puro
+		virtual void RealizarJugada(Tablero *);
 
 	protected:
 		string nombre;

@@ -38,11 +38,10 @@ void Jugador::setMarca(char pmarca){
 	marca=pmarca;
 }
 
-void Jugador::elegirCasilla(int x, int y){
-	corx=x;
-	cory=y;
+bool Jugador::elegirCasilla(int x, int y){
+	return false;
 } //Método Virtual Puro
 
-void Jugador::RealizarJugada(){
+void Jugador::RealizarJugada(Tablero* tab){
 	
 }
