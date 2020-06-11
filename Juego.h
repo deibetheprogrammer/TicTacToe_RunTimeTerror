@@ -9,7 +9,7 @@ class Juego
 		//CONSTRUCTORES
 		Juego();
 		
-		Juego(Tablero tablero, Jugador jugador1, Jugador jugador2);
+		Juego(Tablero tablero, Jugador* jugador1, Jugador* jugador2);
 		
 		//FUNCIONES
 		int validarGanador();
@@ -24,8 +24,6 @@ class Juego
 		
 		//SETTERS
 		void setTablero(Tablero tablero);
-		
-		void setJugadores(Jugador* jugadores);
 		
 		//DESTRUCTORES
 		~Juego();

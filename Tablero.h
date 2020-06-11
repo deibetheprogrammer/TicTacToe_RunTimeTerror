@@ -8,14 +8,17 @@ class Tablero
 	public:
 		Tablero();
 		
+		Casilla*** matriz; 
+		int size;
+		
 		bool marcarCasilla(int,int,char);
 		void printTablero();
+	
 		
 		~Tablero();
 	protected:
 		//matriz de apuntadores a casillas
-		Casilla*** matriz; 
-		int size;
+		
 };
 
 #endif

@@ -129,7 +129,7 @@ BuildCmd=
 <<<<<<< HEAD
 FileName=Juego.cpp
 =======
-FileName=JugadoHumano.cpp
+FileName=Juego.cpp
 >>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
@@ -143,7 +143,7 @@ BuildCmd=
 <<<<<<< HEAD
 FileName=Juego.h
 =======
-FileName=Juego.cpp
+FileName=Juego.h
 >>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
@@ -157,7 +157,7 @@ BuildCmd=
 <<<<<<< HEAD
 FileName=JugadoHumano.cpp
 =======
-FileName=Juego.h
+FileName=Jugador.h
 >>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
 CompileCpp=1
 Folder=
@@ -168,7 +168,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=JugadoHumano.h
+FileName=Jugador.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -179,13 +179,14 @@ BuildCmd=
 
 [Unit12]
 <<<<<<< HEAD
-FileName=JugadoHumano.h.gch
+FileName=JugadorHumano.cpp
 Folder=
-Compile=0
-Link=0
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
 
 [Unit13]
 =======
@@ -198,13 +199,14 @@ Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
-
 <<<<<<< HEAD
+
 [Unit14]
 =======
+
 [Unit13]
 >>>>>>> 6864a6b64b6da9e1686e0eff8d793aede2bb9f2a
-FileName=Jugador.h
+FileName=JugadorHumano.h
 CompileCpp=1
 Folder=
 Compile=1

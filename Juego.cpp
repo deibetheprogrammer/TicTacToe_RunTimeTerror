@@ -7,7 +7,7 @@ Juego::Juego()
 {
 }
 
-Juego::Juego(Tablero tablero, Jugador jugador1, Jugador jugador2) {
+Juego::Juego(Tablero tablero, Jugador* jugador1, Jugador* jugador2) {
 	
 	this->tablero = tablero;
 	this->jugadores[0] = jugador1;
@@ -15,21 +15,17 @@ Juego::Juego(Tablero tablero, Jugador jugador1, Jugador jugador2) {
 }
 
 //GETTERS
-Tablero getTablero() {
+Tablero Juego::getTablero() {
 	return tablero;
 }
 		
-Jugador* getJugadores() {
-	return jugadores;
+Jugador* Juego::getJugadores() {
+	return *jugadores;
 }
 		
 //SETTERS
-void setTablero(Tablero tablero) {
+void Juego::setTablero(Tablero tablero) {
 	this->tablero = tablero;
-}
-		
-void setJugadores(Jugador* jugadores) {
-	this->jugadores = jugadores;
 }
 
 //FUNCIONES
@@ -43,59 +39,59 @@ int Juego::validarGanador() {
 	//Validar si J1 ganó
 	
 	//horizontales
-	if(tablero[0][0] == j1->getMarca() && tablero[0][1] == j1->getMarca() && tablero[0][2] == j1->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j1->getMarca() && tablero.matriz[0][1]->getValue() == j1->getMarca() && tablero.matriz[0][2]->getValue() == j1->getMarca())
 		winner = 0;
 	
-	if(tablero[1][0] == j1->getMarca() && tablero[1][1] == j1->getMarca() && tablero[1][2] == j1->getMarca())
+	if(tablero.matriz[1][0]->getValue() == j1->getMarca() && tablero.matriz[1][1]->getValue() == j1->getMarca() && tablero.matriz[1][2]->getValue() == j1->getMarca())
 		winner = 0;
 	
-	if(tablero[2][0] == j1->getMarca() && tablero[2][1] == j1->getMarca() && tablero[2][2] == j1->getMarca())
+	if(tablero.matriz[2][0]->getValue() == j1->getMarca() && tablero.matriz[2][1]->getValue() == j1->getMarca() && tablero.matriz[2][2]->getValue() == j1->getMarca())
 		winner = 0;
 	
 	//verticales
-	if(tablero[0][0] == j1->getMarca() && tablero[1][0] == j1->getMarca() && tablero[2][0] == j1->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j1->getMarca() && tablero.matriz[1][0]->getValue() == j1->getMarca() && tablero.matriz[2][0]->getValue() == j1->getMarca())
 		winner = 0;
 	
-	if(tablero[0][1] == j1->getMarca() && tablero[1][1] == j1->getMarca() && tablero[2][1] == j1->getMarca())
+	if(tablero.matriz[0][1]->getValue() == j1->getMarca() && tablero.matriz[1][1]->getValue() == j1->getMarca() && tablero.matriz[2][1]->getValue() == j1->getMarca())
 		winner = 0;
 	
-	if(tablero[0][2] == j1->getMarca() && tablero[1][2] == j1->getMarca() && tablero[2][2] == j1->getMarca())
+	if(tablero.matriz[0][2]->getValue() == j1->getMarca() && tablero.matriz[1][2]->getValue() == j1->getMarca() && tablero.matriz[2][2]->getValue() == j1->getMarca())
 		winner = 0;
 	
 	//diagonales
-	if(tablero[0][0] == j1->getMarca() && tablero[1][1] == j1->getMarca() && tablero[2][2] == j1->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j1->getMarca() && tablero.matriz[1][1]->getValue() == j1->getMarca() && tablero.matriz[2][2]->getValue() == j1->getMarca())
 		winner = 0;
 		
-	if(tablero[0][2] == j1->getMarca() && tablero[1][1] == j1->getMarca() && tablero[2][0] == j1->getMarca())
+	if(tablero.matriz[0][2]->getValue() == j1->getMarca() && tablero.matriz[1][1]->getValue() == j1->getMarca() && tablero.matriz[2][0]->getValue() == j1->getMarca())
 		winner = 0;
 	
 	//Validar si J2 ganó
 	
 	//horizontales
-	if(tablero[0][0] == j2->getMarca() && tablero[0][1] == j2->getMarca() && tablero[0][2] == j2->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j2->getMarca() && tablero.matriz[0][1]->getValue() == j2->getMarca() && tablero.matriz[0][2]->getValue() == j2->getMarca())
 		winner = 1;
 	
-	if(tablero[1][0] == j2->getMarca() && tablero[1][1] == j2->getMarca() && tablero[1][2] == j2->getMarca())
+	if(tablero.matriz[1][0]->getValue() == j2->getMarca() && tablero.matriz[1][1]->getValue() == j2->getMarca() && tablero.matriz[1][2]->getValue() == j2->getMarca())
 		winner = 1;
 	
-	if(tablero[2][0] == j2->getMarca() && tablero[2][1] == j2->getMarca() && tablero[2][2] == j2->getMarca())
+	if(tablero.matriz[2][0]->getValue() == j2->getMarca() && tablero.matriz[2][1]->getValue() == j2->getMarca() && tablero.matriz[2][2]->getValue() == j2->getMarca())
 		winner = 1;
 	
 	//verticales
-	if(tablero[0][0] == j2->getMarca() && tablero[1][0] == j2->getMarca() && tablero[2][0] == j2->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j2->getMarca() && tablero.matriz[1][0]->getValue() == j2->getMarca() && tablero.matriz[2][0]->getValue() == j2->getMarca())
 		winner = 1;
 	
-	if(tablero[0][1] == j2->getMarca() && tablero[1][1] == j2->getMarca() && tablero[2][1] == j2->getMarca())
+	if(tablero.matriz[0][1]->getValue() == j2->getMarca() && tablero.matriz[1][1]->getValue() == j2->getMarca() && tablero.matriz[2][1]->getValue() == j2->getMarca())
 		winner = 1;
 	
-	if(tablero[0][2] == j2->getMarca() && tablero[1][2] == j2->getMarca() && tablero[2][2] == j2->getMarca())
+	if(tablero.matriz[0][2]->getValue() == j2->getMarca() && tablero.matriz[1][2]->getValue() == j2->getMarca() && tablero.matriz[2][2]->getValue() == j2->getMarca())
 		winner = 1;
 	
 	//diagonales
-	if(tablero[0][0] == j2->getMarca() && tablero[1][1] == j2->getMarca() && tablero[2][2] == j2->getMarca())
+	if(tablero.matriz[0][0]->getValue() == j2->getMarca() && tablero.matriz[1][1]->getValue() == j2->getMarca() && tablero.matriz[2][2]->getValue() == j2->getMarca())
 		winner = 1;
 		
-	if(tablero[0][2] == j2->getMarca() && tablero[1][1] == j2->getMarca() && tablero[2][0] == j2->getMarca())
+	if(tablero.matriz[0][2]->getValue() == j2->getMarca() && tablero.matriz[1][1]->getValue() == j2->getMarca() && tablero.matriz[2][0]->getValue() == j2->getMarca())
 		winner = 1;
 		
 	delete j1;
