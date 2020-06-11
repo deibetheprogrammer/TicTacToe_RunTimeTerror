@@ -37,11 +37,3 @@ char Jugador::getMarca(){
 void Jugador::setMarca(char pmarca){
 	marca=pmarca;
 }
-
-bool Jugador::elegirCasilla(int x, int y){
-	return false;
-} //Método Virtual Puro
-
-void Jugador::RealizarJugada(Tablero* tab){
-	
-}
